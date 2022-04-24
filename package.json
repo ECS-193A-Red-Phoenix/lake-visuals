@@ -2,7 +2,7 @@
   "name": "lake-visuals",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maksimovichsam.github.io/lake-visuals/",
+  "homepage": "https://ecs-193a-red-phoenix.github.io/lake-visuals/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
