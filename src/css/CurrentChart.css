@@ -1,0 +1,99 @@
+/* Legend CSS */
+
+.current-legend-container {
+    position: absolute;
+    left: 100%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.current-legend-container > * {
+    margin: 7px 0px;
+}
+
+.current-legend-box-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.current-legend-box-units {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 7px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.current-chart-cursor {
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transform: translate(-50%, -200%);
+    white-space: nowrap;
+}
+
+/*********************************************************************
+    Current Map Scaling CSS
+  - I wasn't sure how to get the canvas element that contains the 
+  current map to scale continuously with the width of the screen,
+  so I opted for a discrete scaling as the width of the screen changes
+  - These width and height ratios match 102 / 174, the aspect ratio of
+  the current map
+**********************************************************************/
+
+.current-chart-canvas-container {
+    position: relative;   
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+}
+
+.current-chart-canvas-container > canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media only screen and  (max-width: 807px) {
+    #current-visual-container {
+        flex-direction: column;
+    }
+    .current-legend-container {
+        position: static;
+        align-self: center;
+    }
+}
+
+@media only screen and  (max-width: 455px) {
+    .current-chart-canvas-container {
+        width: 306px;
+        height: 522px;
+    }
+    .current-chart-canvas-container > canvas {
+        height: 522px;
+    }
+}
+
+@media only screen and  (max-width: 348px) {
+    .current-chart-canvas-container {
+        width: 255px;
+        height: 435px;
+    }
+    .current-chart-canvas-container > canvas {
+        height: 435px;
+    }
+}
+
+/*********************************************************************
+                END Current Map Scaling CSS
+**********************************************************************/

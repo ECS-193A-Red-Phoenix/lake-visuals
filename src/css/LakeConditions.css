@@ -1,0 +1,149 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 450px;
+  height: 100px;
+  background-color: red;
+
+  margin: auto;
+}
+
+.box > p {
+  color: white;
+  margin-bottom: 1px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.model-figure-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.model-figure-container > * {
+  margin: 10px 0px;
+}
+
+.fig-container {
+  height: 600px;
+}
+
+.fig-container > img {
+  display: block;
+  height: 100%;
+}
+
+.lake-condition-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+
+.lake-condition-left-column {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
+
+@media only screen and  (max-width: 1350px) {
+    .lake-condition-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lake-condition-left-column {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+
+/* Lake Condition Block */
+
+.lake-condition-title {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.lake-condition-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    line-height: 1.3em;
+}
+
+.center-fill-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lake-visual-container {
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.loading-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 684px;
+}
+
+/* Lake Forecast Information */
+
+.lake-condition-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #dedede;
+  transition: box-shadow 0.2s linear;
+  padding: 20px;
+}
+
+.lake-condition-info:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 40px #dedede;
+}
+
+.lake-condition-info-active {
+  box-shadow: 3px 3px 40px #dedede;
+}
+
+.lake-condition-date {
+  font-size: 20px;
+}
+
+.lake-condition-value {
+  margin-top: 5px;
+}
+
+.lake-condition-controls {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.content-wrapper {
+  position: relative;
+}
