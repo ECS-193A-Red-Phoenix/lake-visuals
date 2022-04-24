@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lake-visuals/static/css/main.4b501489.css",
+    "main.js": "/lake-visuals/static/js/main.8301e7d6.js",
+    "index.html": "/lake-visuals/index.html",
+    "main.4b501489.css.map": "/lake-visuals/static/css/main.4b501489.css.map",
+    "main.8301e7d6.js.map": "/lake-visuals/static/js/main.8301e7d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b501489.css",
+    "static/js/main.8301e7d6.js"
+  ]
+}
