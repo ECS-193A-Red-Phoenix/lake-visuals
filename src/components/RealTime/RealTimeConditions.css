@@ -1,0 +1,178 @@
+.real-time-conditions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.map-controls-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.map-control-button {
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #dedede;
+    padding: 10px;
+    margin: 10px;
+}
+
+.map-control-button:hover {
+    cursor: pointer;
+}
+
+.map-control-button-active {
+    background-color: aliceblue;
+}
+
+.time-plot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+}
+
+.compass-plot {
+    font-size: 20px;
+}
+
+.time-plot-container > .compass-plot {
+    width: 500px;
+    height: 500px;
+}
+
+#compass-title {
+    font-size: 15px;
+}
+
+#compass-number {
+    font-size: 30px;
+}
+
+#compass-unit {
+    font-size: 30px;
+}
+
+.line-plot {
+    width: 800px;
+    height: 500px;
+    overflow: visible;
+    pointer-events: all;
+}
+
+.line-plot-title {
+    font-size: 12px;
+    margin-left: 3%;
+}
+
+.line-plot-subtitle {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+
+.line-plot-label, .line-plot-cursor {
+    font-size: 12px;
+}
+
+
+.line-plot>#cursor {
+    display: none;
+}
+
+.station-map-container {
+    max-width: 400px;
+    position: relative;
+}
+
+.station-map-container>img {
+    width: 100%;
+    display: block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.station-map-container>svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+}
+
+.image-container>img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-description-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 40, 81, 0.5);
+    padding: 30px;
+    max-height: 100%;
+}
+
+.page-description-title {
+    font-size: 35px;
+}
+
+.page-description {
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+    .real-time-conditions-container {
+        display: block;
+    }
+
+    .station-map-container {
+        max-width: 400px;
+        position: relative;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .line-plot-container {
+        width: 100%;
+    }
+
+    .time-plot-container > .compass-plot, .time-plot-container .line-plot {
+        width: auto;
+        height: auto;
+    }
+
+    .line-plot-label, .line-plot-cursor {
+        font-size: 12px;
+    }
+}
