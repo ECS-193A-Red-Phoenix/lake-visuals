@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+
 import "./css/App.css";
+import "./css/reset.css";
 
 function App() {
   return (
