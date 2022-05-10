@@ -114,6 +114,7 @@ function RealTimeConditions(props) {
           <div className="page-last-updated"> </div>
         </div>
       </div> */}
+      <div className="PromptForRT">Select Location For Data:</div>
 
       <StationMap stationIdx={stationIdx} onClick={onSetStationIdx} />
       <div className="real-time-conditions-container">
